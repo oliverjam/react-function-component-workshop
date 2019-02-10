@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 900;
+  line-height: 1;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: hsl(220, 10%, 96%);
+  color: hsl(220, 10%, 25%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.125rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.page {
+  display: grid;
+  gap: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .page {
+    grid-template-columns: 1fr 16rem;
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+.header {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+@media (min-width: 40em) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+.product {
+  display: grid;
+  gap: 1rem;
+}
+
+.related {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.related img {
+  width: 9rem;
+  height: 6rem;
+}
+
+.basket {
+  display: grid;
+  gap: 0.5rem;
+  align-self: start;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px hsla(220, 10%, 30%, 0.4),
+    0 6px 16px hsla(200, 10%, 50%, 0.3);
+  border-top: 0.25rem solid hsl(10, 100%, 70%);
+  background-color: hsl(220, 10%, 98%);
+}
+
+.basket > header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+button {
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  font-weight: 900;
+  color: inherit;
+  background-color: hsl(10, 100%, 75%);
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: hsl(10, 100%, 68%);
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
