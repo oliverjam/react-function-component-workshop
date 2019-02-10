@@ -4,7 +4,7 @@ You're going to practice splitting a UI up into function components that pass th
 
 Here's the end-goal:
 
-![End-goal](https://user-images.githubusercontent.com/9408641/52533191-183b6c00-2d28-11e9-92de-a2cbfddc48a3.png)
+![End-goal](https://user-images.githubusercontent.com/9408641/52533193-1b365c80-2d28-11e9-9d63-8dd93e43f6d7.png)
 
 ## Getting started
 
@@ -14,7 +14,7 @@ Here's the end-goal:
 
 The page should look pretty bare:
 
-![End-goal](https://user-images.githubusercontent.com/9408641/52533193-1b365c80-2d28-11e9-9d63-8dd93e43f6d7.png)
+![End-goal](https://user-images.githubusercontent.com/9408641/52533191-183b6c00-2d28-11e9-92de-a2cbfddc48a3.png)
 
 There are several components in the `workshop/components/` directory that you need to fill out to recreate the UI.
 
